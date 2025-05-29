@@ -78,3 +78,42 @@ int main () {
     return 0;
 }
 ```
+---
+### Variable Scope Demonstration
+```cpp
+#include <iostream>
+using namespace std;
+
+void f1();
+void f2(int x, int y);
+void f3();
+
+int main () {
+    int x;
+    x = 10;
+    cout << "The value of x = " << x << endl;
+    for (int j=0; j <= 10; j++) {
+        int x = j*2;
+        cout << "The value of x is = " << x << endl;
+    }
+    f2(x, x);
+    cout << "The value of x is = " << x << endl;
+    return 0;
+}
+void f2(int x, int y) {
+    cout << "The value of x is : " << x << endl;
+    cout << "The value of y is : " << y << endl;
+}
+```
+1. **Function Declaration Scope**  
+   - `f1()`, `f2()`, `f3()` declared globally → accessible anywhere
+
+2. **Local Variable Shadowing**  
+   ```cpp
+   int x = 10;          // Outer x
+   for(...) {
+       int x = j*2;     // Inner x shadows outer x
+       cout << x;       // Uses inner x (0,2,4...20)
+   }
+
+---
