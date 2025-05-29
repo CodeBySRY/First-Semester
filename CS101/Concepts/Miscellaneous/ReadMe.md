@@ -32,7 +32,10 @@ int main() {
     return 0;
 }
 ```
-- An interesting thing is that even though the x value does not correspond to this case, it still executes, just because of the omission of break; in the previous case.
+
+> [!NOTE]
+> An interesting thing is that even though the `x` value does not correspond to this case, it still executes, just because of the omission of break; in the previous case.
+
 ---
 ### Infinite Loop Example with User Input
 ```cpp
