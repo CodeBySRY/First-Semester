@@ -70,3 +70,41 @@ int main() {
     
     return 0;
 }
+```
+### Here is the breakdown of the two scenarios:
+
+### ✅ Loop with Post-Increment (`x++`)
+
+- Starts with `x = 5`
+- Condition checks `x < 8`, then increments
+- `x` reaches 8 during the last successful check, then increments to 9
+- Loop runs 3 times
+- Final values:  
+  `x = 9`, `y = 21`
+
+### ✅ Loop with Pre-Increment (`++x`)
+
+- Starts with `x = 5`
+- `x` is incremented **before** condition check
+- Increments to 6, 7 — loop runs 2 times
+- At `x = 8`, condition fails and loop stops
+- Final values:  
+  `x = 8`, `y = 13`
+
+---
+
+### 📊 Final Comparison
+
+| Feature               | Post-Increment (`x++`) | Pre-Increment (`++x`) |
+|-----------------------|------------------------|------------------------|
+| When `x` is incremented | After condition        | Before condition       |
+| Loop runs              | 3 times                | 2 times                |
+| Final value of `x`     | 9                      | 8                      |
+| Final value of `y`     | 21                     | 13                     |
+
+---
+
+### 💡 Takeaway
+
+Using `++x` or `x++` in a loop condition **directly affects** how many times the loop runs and what data it processes.  
+For exams and debugging, always **trace increment behavior step by step** to avoid logical errors.
