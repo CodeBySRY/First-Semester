@@ -17,7 +17,9 @@ Write a C++ function that calculates the length of the ramp (c) using the Pythag
 - const int a is the height of the entrance from the ground.
 - const int b is the horizontal distance available for the ramp with a default value of 1.
 - c is the length of the ramp.
+
 The function should return the length of the ramp  without modifying the parameters (a and b).
+
 Write a main function that:
 - Prompts the user to enter the value of a and b.
 - Calls ramp with only the a, letting the b default to 1.
