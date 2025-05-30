@@ -1,5 +1,5 @@
 ## 📚 Lab Contents
-This folder contains code implementations for two CS101L exercises.
+This directory contains code implementations for two CS101L.
 
 ### Lab A
 - Contains source code files for Lab #6
@@ -19,5 +19,5 @@ This folder contains code implementations for two CS101L exercises.
 4. Compile and run the programs as needed
 
 ## 📁 Folder Status
-Currently contains only two lab exercises. More may be added in the future as they become available. Until then:
+Currently contains only two lab exercises. More may be added in the future if they become available. Until then:
 > Happy learning!
