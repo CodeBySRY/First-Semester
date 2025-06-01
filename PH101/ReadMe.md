@@ -1,6 +1,9 @@
 # 📚⚛️ PH101 - Applied Physics
+
 **Instructor:** Professor Tahir Naseem
+
 **Course Code:** PH101
+
 **Directory Contents:** Question banks, assignments, and OEL (Open Ended Lab) materials in PDF format
 
 ---
